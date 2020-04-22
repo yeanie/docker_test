@@ -8,7 +8,7 @@ docker build
 
 ---
 
-docker build --rm -t yeanie01/
+docker build --rm -t yeanie01/docker_test .
 
 # dockertest
 
