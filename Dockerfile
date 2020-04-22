@@ -1,13 +1,8 @@
 FROM ubuntu
-MAINTAINER The kt Project <yeanie1004@gmail.com>
+MAINTAINER The kt Project
 
-# ENV LC_ALL en_US.UTF-8
+RUN apt-get update
 
-COPY ./install.sh /
-COPY ./start.sh /
-RUN chmod 755 /install.sh
-RUN chmod 755 /start.sh
-RUN /install.sh
-
-# ENTRYPOINT ["/xx/sshd","sshd"]
-CMD /start.sh
+RUN apt-get install -y net-tools
+RUN apt-get install -y curl
+RUN apt-get install -y tree
