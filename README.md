@@ -1,7 +1,5 @@
-docker_test
-===========
-
-실습 평가
+실습 평가 docker_test
+============
 
 docker build
 ============
